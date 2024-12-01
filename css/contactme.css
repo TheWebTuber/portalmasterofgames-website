@@ -110,6 +110,16 @@
     text-align: center;
   }
 
+  .info-box3 {
+    margin-top: 20px; /* sets top margin to 20px */
+    border: 2px solid #1ee204e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+
   h2 {
     margin-top: 10;
     color: #848484;
@@ -142,6 +152,14 @@
     display: block;
     margin-top: 20px;
     color: #bd04e2e8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .linkP {
+    display: block;
+    margin-top: 20px;
+    color: #16ff0ee8;
     text-decoration: none;
     font-weight: bold;
   }
@@ -303,6 +321,16 @@
     text-align: center;
   }
 
+  .info-box3 {
+    margin-top: 20px; /* sets top margin to 20px */
+    border: 2px solid #1ee204e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+
   h2 {
     margin-top: 10;
     color: #848484;
@@ -335,6 +363,14 @@
     display: block;
     margin-top: 20px;
     color: #bd04e2e8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .linkP {
+    display: block;
+    margin-top: 20px;
+    color: #16ff0ee8;
     text-decoration: none;
     font-weight: bold;
   }
@@ -496,6 +532,16 @@
     text-align: center;
   }
 
+  .info-box3 {
+    margin-top: 20px; /* sets top margin to 20px */
+    border: 2px solid #1ee204e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+
   h2 {
     margin-top: 10;
     color: #848484;
@@ -528,6 +574,14 @@
     display: block;
     margin-top: 20px;
     color: #bd04e2e8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .linkP {
+    display: block;
+    margin-top: 20px;
+    color: #16ff0ee8;
     text-decoration: none;
     font-weight: bold;
   }
@@ -689,6 +743,16 @@
     text-align: center;
   }
 
+  .info-box3 {
+    margin-top: 20px; /* sets top margin to 20px */
+    border: 2px solid #1ee204e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+
   h2 {
     margin-top: 10;
     color: #848484;
@@ -721,6 +785,14 @@
     display: block;
     margin-top: 20px;
     color: #bd04e2e8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .linkP {
+    display: block;
+    margin-top: 20px;
+    color: #16ff0ee8;
     text-decoration: none;
     font-weight: bold;
   }
