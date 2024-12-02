@@ -528,6 +528,16 @@
     text-shadow: 0 10px 20px #ff0000;
   }
 
+  .banner .content .title {
+    position: relative;
+    bottom: 500px;
+    left: 35%;
+    color: white; /* Make the text white */
+    font-size: 36px; /* Set the text size to be big */
+    z-index: 1;
+    text-shadow: 0 10px 20px #ffffff;
+  }
+
   .banner .content .model {
     background-image: url(images/bg.png);
     width: 100%;
@@ -720,6 +730,17 @@
       )
       translateZ(550px);
   }
+
+  .banner .content .title {
+    position: relative;
+    bottom: 500px;
+    left: 35%;
+    color: rgb(0, 0, 0); /* Make the text white */
+    font-size: 36px; /* Set the text size to be big */
+    z-index: 1;
+    text-shadow: 0 10px 20px #b90000b8;
+  }
+
 
   .banner .slider .item img {
     width: 100%;
