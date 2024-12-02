@@ -469,77 +469,35 @@
   }
 
   .container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 20px;
+    margin: 0 auto; /* Center container */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Include padding and border in width */
   }
 
   .about {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align for better layout */
+    width: 100%; /* Ensure full width */
+  }
+
+  .about-content {
+    width: 100%; /* Full width for content */
   }
 
   .about-image {
-    flex: 1;
-    margin-right: 40px;
-    overflow: hidden;
+    width: 100%; /* Full width for image container */
+    text-align: center; /* Center the image */
   }
 
   .about-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.5s ease; /* Smooth transition */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline spacing issues */
   }
 
   .about-image img:hover {
     transform: scale(1.5); /* Enlarge the image on hover */
-  }
-
-  .about-content {
-    flex: 1;
-    color: rgb(255, 255, 255);
-  }
-
-  .info-box {
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .info-box1 {
-    margin-top: 20px; /* sets top margin to 20px */
-    border: 2px solid #1022e2e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .info-box2 {
-    margin-top: 20px; /* sets top margin to 20px */
-    border: 2px solid #bd04e2e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .info-box3 {
-    margin-top: 20px; /* sets top margin to 20px */
-    border: 2px solid #1ee204e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
   }
 
   h2 {
@@ -554,36 +512,62 @@
     line-height: 1.2;
   }
 
-  .linkY {
-    display: block;
-    margin-top: 20px;
-    color: #ff0000;
-    text-decoration: none;
+  .info-box,
+  .info-box1,
+  .info-box2,
+  .info-box3 {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    width: calc(100% - 40px); /* Full width minus margin */
+    max-width: 800px; /* Optional: Limit width on larger screens */
+    text-align: center; /* Center-align text */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .info-box {
+    border: 2px solid #ff0000; /* Red border */
+  }
+
+  .info-box1 {
+    border: 2px solid #1022e2e8; /* Blue border */
+  }
+
+  .info-box2 {
+    border: 2px solid #bd04e2e8; /* Purple border */
+  }
+
+  .info-box3 {
+    border: 2px solid #1ee204e8; /* Green border */
+  }
+
+  a {
+    text-decoration: none; /* Remove underline */
     font-weight: bold;
+  }
+
+  .linkY {
+    color: #ff0000; /* Red link */
   }
 
   .linkD {
-    display: block;
-    margin-top: 20px;
-    color: #1022e2e8;
-    text-decoration: none;
-    font-weight: bold;
+    color: #1022e2e8; /* Blue link */
   }
 
   .linkI {
-    display: block;
-    margin-top: 20px;
-    color: #bd04e2e8;
-    text-decoration: none;
-    font-weight: bold;
+    color: #bd04e2e8; /* Purple link */
   }
 
   .linkP {
-    display: block;
-    margin-top: 20px;
-    color: #16ff0ee8;
-    text-decoration: none;
-    font-weight: bold;
+    color: #1ee204e8; /* Green link */
+  }
+
+  .linkY:hover,
+  .linkD:hover,
+  .linkI:hover,
+  .linkP:hover {
+    text-decoration: underline; /* Underline on hover */
+    opacity: 0.8; /* Slight transparency on hover */
   }
 
   .link:hover {
@@ -605,13 +589,15 @@
     flex-direction: column;
     text-align: center;
     margin: 20px auto;
+    color: #ddd;
   }
 
   .heading h1 {
     font-size: 50px;
-    color: rgb(255, 255, 255);
+    color: #000000;
     margin-bottom: 25px;
     position: relative;
+    color: #ddd;
   }
 
   .heading h1::after {
@@ -621,12 +607,13 @@
     height: 4px;
     display: block;
     margin: auto;
-    background-color: #ddd;
+    background-color: #222;
+    color: #ddd;
   }
 
   .heading p {
     font-size: 10px;
-    color: antiquewhite;
+    color: #ffffff;
     margin-bottom: 35px;
   }
 }
@@ -680,77 +667,35 @@
   }
 
   .container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 20px;
+    margin: 0 auto; /* Center container */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Include padding and border in width */
   }
 
   .about {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align for better layout */
+    width: 100%; /* Ensure full width */
+  }
+
+  .about-content {
+    width: 100%; /* Full width for content */
   }
 
   .about-image {
-    flex: 1;
-    margin-right: 40px;
-    overflow: hidden;
+    width: 100%; /* Full width for image container */
+    text-align: center; /* Center the image */
   }
 
   .about-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.5s ease; /* Smooth transition */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline spacing issues */
   }
 
   .about-image img:hover {
     transform: scale(1.5); /* Enlarge the image on hover */
-  }
-
-  .about-content {
-    flex: 1;
-    color: #000000;
-  }
-
-  .info-box {
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .info-box1 {
-    margin-top: 20px;
-    border: 2px solid #1022e2e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .info-box2 {
-    margin-top: 20px;
-    border: 2px solid #bd04e2e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .info-box3 {
-    margin-top: 20px; /* sets top margin to 20px */
-    border: 2px solid #1ee204e8;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    max-width: 600px;
-    text-align: center;
   }
 
   h2 {
@@ -765,36 +710,62 @@
     line-height: 1.2;
   }
 
-  .linkY {
-    display: block;
-    margin-top: 20px;
-    color: #ff0000;
-    text-decoration: none;
+  .info-box,
+  .info-box1,
+  .info-box2,
+  .info-box3 {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    width: calc(100% - 40px); /* Full width minus margin */
+    max-width: 800px; /* Optional: Limit width on larger screens */
+    text-align: center; /* Center-align text */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .info-box {
+    border: 2px solid #ff0000; /* Red border */
+  }
+
+  .info-box1 {
+    border: 2px solid #1022e2e8; /* Blue border */
+  }
+
+  .info-box2 {
+    border: 2px solid #bd04e2e8; /* Purple border */
+  }
+
+  .info-box3 {
+    border: 2px solid #1ee204e8; /* Green border */
+  }
+
+  a {
+    text-decoration: none; /* Remove underline */
     font-weight: bold;
+  }
+
+  .linkY {
+    color: #ff0000; /* Red link */
   }
 
   .linkD {
-    display: block;
-    margin-top: 20px;
-    color: #1022e2e8;
-    text-decoration: none;
-    font-weight: bold;
+    color: #1022e2e8; /* Blue link */
   }
 
   .linkI {
-    display: block;
-    margin-top: 20px;
-    color: #bd04e2e8;
-    text-decoration: none;
-    font-weight: bold;
+    color: #bd04e2e8; /* Purple link */
   }
 
   .linkP {
-    display: block;
-    margin-top: 20px;
-    color: #16ff0ee8;
-    text-decoration: none;
-    font-weight: bold;
+    color: #1ee204e8; /* Green link */
+  }
+
+  .linkY:hover,
+  .linkD:hover,
+  .linkI:hover,
+  .linkP:hover {
+    text-decoration: underline; /* Underline on hover */
+    opacity: 0.8; /* Slight transparency on hover */
   }
 
   .link:hover {
